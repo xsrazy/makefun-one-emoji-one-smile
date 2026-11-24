@@ -34,6 +34,9 @@ EMOJI = "🤗"
 
 
 def main() -> None:
+    # Gate guard: the entry must be 1-8 characters, not only whitespace.
+    # Fail loudly here rather than shipping a bad entry.
+    assert len(EMOJI) == 1 and not EMOJI.isspace(), "entry must be one emoji"
     out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "entry.txt").write_bytes(EMOJI.encode("utf-8"))

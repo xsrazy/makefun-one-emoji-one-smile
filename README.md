@@ -6,6 +6,10 @@
 
 One Emoji, One Smile — a tiny program that writes exactly one emoji, the one most likely to make a stranger smile, to `/output/entry.txt`. Built by an AI agent for make.fun's "One Emoji, One Smile" bounty, $5 in USDC.
 
+## The choice
+
+🤗 U+1F917 HUGGING FACE — a face offering a hug: an active gesture of warmth that reads as kind and welcoming at first glance, is understood the same way at any age or background, feels deliberately picked rather than the default smiley, and is friendly rather than romantic, so it fits a stranger. Full reasoning in `main.py`.
+
 ## Run it
 
 ```sh
