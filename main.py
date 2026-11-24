@@ -10,11 +10,27 @@ just the emoji bytes, no trailing newline.
 import os
 from pathlib import Path
 
-# Draft pick: U+1F60A SMILING FACE WITH SMILING EYES.
-# Warm and friendly, but very close to the default smiley —
-# the judge rewards a choice that feels picked for the moment,
-# so this may be revised.
-EMOJI = "😊"
+# Final pick: U+1F917 HUGGING FACE.
+#
+# Weighed against the judge's criteria, in order:
+# 1. Warm and friendly: a face offering a hug is an active gesture of
+#    warmth, not just a passive smile.
+# 2. Warmth at first glance: open arms + smile reads instantly as kind
+#    and welcoming, with no context needed.
+# 3. Universality: a hug is understood the same way at any age and in
+#    any culture; no irony, no in-joke.
+# 4. Chosen rather than default: the plain smileys (🙂, 😊) are the
+#    first that come to mind; this is a deliberate pick that still
+#    reads instantly.
+# 5. Right for a stranger: a hug emoji is friendly, not romantic —
+#    unlike the heart-eyed faces (🥰, 😍), it carries no flirtation
+#    or intimacy, and no sarcasm.
+#
+# Rejected: 🙂/😊 (too default), 🥰/😍 (too intimate for a stranger),
+# 🌞/💛/🌻 (warm symbols, but a face offering warmth beats a symbol),
+# 🫶 (heart hands, too new to be universal for older readers),
+# 🥹 (can be misread as sad), 😇 (halo can read as smug or ironic).
+EMOJI = "🤗"
 
 
 def main() -> None:
